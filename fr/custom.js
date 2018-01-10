@@ -1,6 +1,8 @@
 $(function(){
-  $('.tab-menu li > a')
-  .on('click',function(){
+//  $('.tab-menu li > a')
+//  $('.tab-menu')
+//  .on('click',function(){
+//  .on('click', 'li > a', function(event){
 	  event.preventDefault();
     var $this = $(this);
 	  $this.parent().siblings()
@@ -8,5 +10,12 @@ $(function(){
 	  .end()
 	  .addClass('selected');
   });
+});
+
+$(function(){
+$('tab-menu')
+.on('click', 'li > a', function(event){
+event.prevent
+}){}
 });
 
