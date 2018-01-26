@@ -1,0 +1,67 @@
+ul, li{
+  padding: 0;
+  list-style: none;
+}
+#container{
+  margin-top: 20px;
+}
+#modal{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 750px;
+  height: 500px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+}
+#modal-container{
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#modal-contents{
+  width: 100%;
+  height: 100%;
+}
+#modal-close,
+#modal-prev,
+#modal-next{
+  position: absolute;
+  #...
+}
+#modal-close{
+
+}
+#modal-prev{
+
+}
+#modal-next{
+
+}
+#modal-overlay{
+
+}
+#modal-contents img{
+
+}
+#modal-thumb {
+
+}
+#modal-thumb li{
+
+}
+#modal-thumb li img{
+
+}
+#more-btn{
+
+}
+
