@@ -28,12 +28,12 @@ function leave($el, action){
     });
 }
 
-myRouter.add();
-myRouter.add();
-myRouter.add();
-myRouter.add();
+myRouter.add( "/index.html", $("<section class='page page1' />"), createEnterFunc("./index.html"), leave);
+myRouter.add( "/page2.html", $("<section class='page page2' />"), createEnterFunc("./page2.html"), leave);
+myRouter.add( "/page3.html", $("<section class='page page3' />"), createEnterFunc("./page3.html"), leave);
+myRouter.add( "/page4.html", $("<section class='page page4'>"), createEnterFunc("./page4.html"), leave);
 
-$().detach();
+$(".page").detach();
 
 myRouter.start();
 
