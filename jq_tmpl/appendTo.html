@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+</head>
+<body>
+
+<ul id="movieList"></ul>
+
+<script>
+  var movies = [
+    { Name: "", ReleaseYear: "" },
+    { Name: "", ReleaseYear: ""},
+    { Name: "", ReleaseYear: ""}
+  ];
+  var markup = "<li><b>${Name}</b> (${ReleaseYear})</li>";
+
+  $.template("movieTemplate", markup);
+  $.tmpl("movieTemplate", movies)
+    .appendTo( "#movieList" );
+</script>
+/*
+<script>
+var markup = "<li><b>${Name}</b> (${ReleaseYear})</li>";
+
+$.template("movieTemplate", markup);
+function getMovies( genre, skip, top ){
+  $.ajax({
+    dataType: "jsonp",
+    url: "http://odata.netflix.com/Catalog/Genres('" + genre
+    + "')/Titles?$format=json&$skip="
+    + skip + "&$top=" + top,
+    jsonp: "$callback",
+    success: function( data ){
+      var movies = data.d;
+      $("#movieList").empty();
+      $.tmpl("movieTemplate", movies)
+	    .appendTo("#movieList");
+    }
+  });
+}
+
+$("#cartoonsBtn").click( function(){
+  getMovies( "Cartoons", 0, 6);
+});
+
+$("#dramaBtn").click(function(){
+  getMovie( "Drama", 0, 6);
+});
+
+</script>
+*/
+</body>
+</html>
+
