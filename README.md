@@ -1,4 +1,5 @@
-
+# jQ tempates
+https://github.com/BorisMoore/jquery-tmpl
 
 
 ---
